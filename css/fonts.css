@@ -1,0 +1,32 @@
+/* inter */
+@font-face {
+  font-family: 'inter';
+  src: url('../font/inter/inter-regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'inter';
+  src: url('../font/inter/inter-bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+/* Urbanist */
+@font-face {
+  font-family: 'urbanist';
+  src: url('../font/Urbanist/Urbanist-Medium.ttf') format(truetype);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'urbanist';
+  src: url('../font/Urbanist/Urbanist-SemiBold.ttf') format(truetype);
+  font-weight: 600; 
+}
+
+/* Righteous */
+@font-face {
+  font-family: 'righteous';
+  src: url('../font/Righteous/Righteous-Regular.ttf') format(truetype);
+  font-weight: 400;
+}

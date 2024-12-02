@@ -1,0 +1,736 @@
+/* @import './fonts.css'; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'urbanist';
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+  background: #14110E;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  /* border: 1px solid white; */
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.header {
+  background: #1C1814;
+  padding: 32px 0;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__link, 
+.header__buttons {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.header__nav--link a {
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  transition: 0.3s ease-in;
+}
+
+.header__nav--link a:hover {
+  color: #C99E71;
+}
+
+.header__buttons a {
+  display: flex;
+}
+
+/* hero section */
+
+.hero {
+  background: url('../img/hero-bg.jpg') center center / cover no-repeat;
+  height: 735px;
+  display: flex;
+  align-items: center;
+}
+
+.hero__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__content--info {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 529px;
+}
+
+.hero__content--info h1 {
+  font-size: 72px;
+  line-height: 130%;
+  color: #fff;
+  font-family: 'righteous';
+  font-weight: 700;
+}
+
+.hero__content--info p {
+  font-size: 20px;
+  line-height: 180%;
+  color: #fff;
+  font-family: 'urbanist';
+}
+
+.hero__content--info a {
+  font-size: 18px;
+  line-height: 130%;
+  color: #fff;
+  font-family: 'inter';
+  background: #C99E71;
+  align-self: flex-start;
+  padding: 20px;
+  /* text-transform: capitalize; */
+  /* text-transform: lowercase; */
+  text-transform: uppercase;
+}
+
+.play--btn{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin-right: 100px auto;
+}
+
+.play--btn button{
+  width: 70px;
+  height: 70px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: none;
+  margin-bottom: 20px;
+}
+
+/* section-best */
+.best{
+  padding: 140px 0;
+}
+.best__content{
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.best__card p{
+  color: #fff;
+  font-family: 'righteous';
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+.best__card span{
+  color: #C99E71;
+  font-family: 'righteous';
+  font-size: 24px;
+  padding-right: 12px;
+}
+
+.best__card img{
+  width: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* section-history */
+.history{
+  padding-bottom: 140px;
+}
+.history__content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.history__img{
+  display: flex;
+  gap: 36px;
+}
+.history__img-i{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.history__img-i img{
+  width: 300px;
+  height: 300px;
+}
+
+.history__img img{
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.history__img img:hover, .best__card img:hover{
+  transform: scale(1.05);
+}
+
+.img-item3{
+  width: 100%;
+  width: 300px;
+  height: 635px;
+}
+.history__item{
+  background: #1C1814;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 32px;
+  padding: 0 56px;
+}
+
+.history__item p{
+  font-family: 'urbanist';
+  font-weight: 600;
+  font-size: 18px;
+  color: #C99E71;
+}
+.history__item p:last-child{
+  font-family: 'urbanist';
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+}
+.history__item h2{
+  font-family: 'righteous';
+  font-weight: 400;
+  font-size: 48px;
+  color: #ffffff;
+  padding: 12px 0 36px;
+}
+
+/* Product */
+.product{
+  display: flex;
+  text-align: center;
+  padding-bottom: 140px;
+}
+
+.product__p{
+  font-family: 'urbanist';
+  font-weight: 600;
+  font-size: 18px;
+  color: #C99E71;
+}
+
+.product__h2{
+  font-family: 'righteous';
+  font-weight: 400;
+  font-size: 48px;
+  color: #ffffff;
+  padding: 12px 0 56px;
+}
+
+.product__items{
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+}
+.product__card{
+  width: 100%;
+  background: #121315;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+.product__card img{
+  width: 270px;
+  height: 345px;
+  margin: 48px 0 36px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  
+}
+
+.product__card:hover, .product__card img:hover{
+  transform: scale(1.05);
+}
+.product__card-befor{
+  opacity: 1;
+  transition: opacity 0.5s;
+  position: relative;
+}
+.product__card:hover .product__card-befor{
+  opacity: 0;
+}
+.product__card-befor h3{
+  font-family: 'righteous';
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.card-befor-p{
+  font-family: 'urbanist';
+  font-weight: 500;
+  font-size: 18px;
+  color: #C99E71;
+}
+
+.card-befor-p2{
+  font-family: 'urbanist';
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  padding-bottom: 40px;
+}
+.card-befor-p2 span{
+  font-family: 'urbanist';
+  font-weight: 600;
+  font-size: 18px;
+  color: #C99E71;
+}
+
+.product__card-after{
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  right: 0;
+  bottom: 40px;
+}
+
+.product__card:hover .product__card-after{
+  opacity: 1;
+}
+
+.product__card-after h3{
+  font-family: 'righteous';
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+  padding: 36px 0;
+}
+
+.after-btn{
+  padding: 13px;
+  background-color: #C99E71;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px solid #C99E71;
+}
+.after-btn:hover{
+  color: #C99E71;
+  background: #000;
+  transition: background-color 0.5s;
+}
+.product__btn{
+  padding: 20px 36px;
+  background-color: #C99E71;
+  color: #fff;
+  /* text-decoration: none; */
+  border-radius: 5px;
+  border: 2px solid #C99E71;
+  margin-top: 55px;
+}
+
+.product__btn:hover{
+  color: #C99E71;
+  background: #000;
+  transition: background-color 0.5s;
+}
+
+/* Machine */
+.machine{
+  padding-bottom: 140px;
+}
+.machine__content{
+  background: #1C1814;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.machine__img{
+  padding: 85px 150px;
+}
+.machine__img img{
+  width: 230px;
+  height: 360px;
+
+}
+
+
+.machine__info h2{
+  font-family: 'righteous';
+  font-weight: 400;
+  font-size: 48px;
+  color: #ffffff;
+  margin: 36px 0;
+}
+.machine__info p{
+  font-family: 'urbanist';
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  /* margin: 36px 0; */
+  line-height: 180%;
+}
+
+.machine__btn{
+  padding: 20px 36px;
+  background-color: #C99E71;
+  color: #fff;
+  font-family: 'inter';
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px solid #C99E71;
+  margin-top: 55px;
+  outline: none;
+}
+
+.machine__btn:hover{
+  color: #C99E71;
+  background: #000;
+  transition: background-color 0.5s;
+}
+
+/* Popular */
+.popular{
+  padding-bottom: 140px;
+}
+
+.popular__content{
+  text-align: center;
+}
+.popular__item{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.popular__item-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid #32323D;
+  padding: 24px;
+  width: 48%;
+  transition: transform 0.3s;
+}
+
+.popular__item-card:hover{
+  transform: scale(1.05);
+}
+
+.popular__card{
+  display: flex;
+  align-items: center;
+}
+
+.popular__card img{
+  padding-right: 20px;
+  transition: transform 0.3s;
+}
+
+.popular__card img:hover{
+  transform: scale(1.3);
+}
+
+.popular__card p{
+  font-family: 'righteous';
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.popular__item-card span{
+  font-family: 'urbanist';
+  font-weight: 600;
+  font-size: 18px;
+  color: #C99E71;
+}
+
+/* Customer */
+.customer{
+  padding-bottom: 140px ;
+}
+.product__p, .product__h2{
+  text-align: center;
+}
+.customer__page{
+  display: flex;
+  gap: 40px;
+}
+.customer__item{
+  display: flex;
+  background: #1C1814;
+  padding: 40px;
+  
+}
+
+.customer__card h4{
+  font-family: 'urbanist';
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  line-height: 120%;
+}
+
+.customer__card p{
+  font-family: 'urbanist';
+  font-weight: 500;
+  font-size: 14px;
+  color: #e3e0e0;
+  line-height: 180%;
+}
+
+.customer__card img{
+  width: 130px;
+  height: 150px;
+  padding: 0 24px 28px 0;
+}
+
+.customer__info{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.customer__info p{
+  font-family: 'urbanist';
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  line-height: 180%;
+  text-transform: capitalize;
+  padding-bottom: 32px;
+}
+
+.customer__info-star{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.customer__people{
+  padding-top: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+
+.customer__people span{
+  font-size: 20px;
+  line-height: 135%;
+  font-weight: 600;
+  color: #C99E71;
+}
+.customer__arrow img{
+  padding: 16px;
+  background: #C99E71;
+  border-radius: 50%;
+}
+
+/* Booking */
+
+.booking{
+  padding-bottom: 140px;
+}
+
+.booking_content{
+  display: flex;
+  text-align: center;
+}
+
+.booking__img img{
+  width: 585px;
+  height: 652px;
+}
+
+.booking__table{
+  background: #1C1814;
+  padding: 72px 48px;
+}
+
+.booking__table h2{
+  padding: 12px 52px 56px;
+}
+
+.booking__item{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.booking__item-card{
+  background: #14110E;
+  /* border: 2px solid #ffffff; */
+  padding: 16px;
+  width: 100%;
+  /* width: 490px;
+  height: 64px; */
+}
+
+.booking__item-card{
+  font-size: 18px;
+  line-height: 180%;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Latest */
+
+.latest{
+  padding-bottom: 140px;
+}
+
+.latest__item{
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+
+}
+
+.latest__item-cadr {
+  background: #1C1814;
+  transition: transform 0.3s;
+
+}
+
+.latest__item-cadr:hover {
+  transform: scale(1.05);
+}
+
+.latest__item-cadr img {
+  border-radius: 10px;
+}
+
+.latest__item-info{
+  margin: 24px;
+}
+.latest__date{
+  display: flex;
+  justify-content: space-between;
+}
+
+.latest__date p{
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+.latest__date span{
+  color: #C99E71;
+}
+
+.latest__item-info h3{
+  font-family: 'righteous';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%; 
+  padding: 16px 0 32px;
+  color: #fff;
+
+}
+
+.latest__item-info a{
+  color: #C99E71;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer_card{
+  background: #1C1814;
+  text-align: center;
+  padding: 33px;
+}
+
+/* Footer */
+
+.footer__content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 78px;
+}
+
+.footer__content ul{
+  display: flex;
+  gap: 40px;
+}
+
+.footer__link{
+  font-weight: 500;
+  font-size: 20px ;
+  line-height: 100%;
+  color: #fff;
+}
+.footer_card{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 180%;
+  color: #fff;
+}
+
+.footer__inp{
+  /* width: 328px;
+  height: 72px; */
+  background: #1C1814;
+  border: 2px solid #1C1814;
+  border-radius: 36px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.footer__inp input{
+  background-color: transparent;
+  border: none;
+  padding: 22px 10px 22px 28px;
+  color: #fdfcfc;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 16px;
+  line-height: 180%;
+  outline: none;
+}
+
+.footer__btn{
+  margin: 12px;
+  border-radius: 50%;
+  background: #C99E71;
+  border: none;
+  outline: none;
+}
+
+.footer__btn img{
+  padding: 10px;
+  
+}
+/* 
+100 - thin
+200 - extra light
+300 - light
+400 - regular
+500 - medium
+600 - semibold
+700 - bold
+800 - extra bold
+900 - black
+
+
+*/

@@ -110,6 +110,21 @@ body{
   text-transform: uppercase;
 }
 
+.hero__btn{
+  padding: 20px 36px;
+  background-color: #C99E71;
+  color: #fff;
+  /* text-decoration: none; */
+  border-radius: 5px;
+  border: 2px solid #C99E71;
+}
+
+.hero__btn:hover{
+  color: #C99E71;
+  background: #000;
+  transition: background-color 0.9s;
+}
+
 .play--btn{
   color: #fff;
   display: flex;
